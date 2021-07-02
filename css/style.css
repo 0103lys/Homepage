@@ -1,6 +1,14 @@
+@font-face {
+    font-family: 'MaruBuri-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 body *{
     margin: 0;
     padding: 0;
+    font-family: 'MaruBuri-Regular';
+    
 }
 #wrap {
     width: 1000px;
@@ -9,13 +17,13 @@ body *{
 
 header{ width: 100%; }
 header h1 { color: rgb(74, 67, 59); font-weight:500;
-    position: absolute; top:20px; left:45%; font-size: 29px; }
+    position: absolute; top:20px; left:45%; font-size: 29px; letter-spacing: 6px;}
 .nav {
     
     box-shadow:  5px 5px 10px rgb(221, 221, 221);
     margin-top: 100px;
-    
-    width: 1000px;
+    text-align: center;
+    width: 98%;
     height: 30px;   
     border: 0.3px solid rgb(211, 211, 211);
     display: inline-block;
@@ -26,30 +34,31 @@ header h1 { color: rgb(74, 67, 59); font-weight:500;
 }
 ul, li a{
     text-decoration: none;
-    list-style: none; color: rgb(112,112,112);
+    list-style: none; color: rgb(112,112,112);text-align: center;
 }
 
 .menu li {
     position: relative;
     margin-top: 5px;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 14px;
     letter-spacing: -1px;
     word-spacing: -1px;
+    
 }
 
 
 
 .menu li {
     float: left;
-    padding-left: 60px;
+    padding-left: 77px;
 
 }
 
 #container{ width: 100%; margin-bottom: 60px; margin-top: 30px;}
 
 .mainimg{
-    background:url(/images/mainimg.jpg) no-repeat;
+    background:url(../images/mainimg.jpg) no-repeat 0 0;
    
     height:480px;
 }
@@ -62,18 +71,18 @@ ul, li a{
 
 
 
-.main_tit{ width: 25%; display: inline-block; margin-right: 20px; }
-.main_tit h3{
-    border-bottom: 2px solid rgb(211, 211, 211);
-    color: rgb(74, 67, 59);
-    font-size: 11.5px;
+.main_tit{ width: 23%; display: inline-block; margin-right: 20px; }
+.main_tit h3{ 
+    margin-bottom: 5px;
+    color: rgb(48, 43, 38);
+    font-size: 12px;
     font-weight: bold;
 
     
 }
 .main_txt{
     font-size: 11px;
-
+    border-top: 2px solid rgb(161, 161, 161);
 }
 
 .main_tit a{ text-decoration: none;
@@ -83,46 +92,36 @@ margin-bottom: 50px;}
 
 footer {
     width: 100%;
-    height: 40px;
+    
     border-top: 1px solid rgb(211, 211, 211) ;
 }
 
-.footerbox { width: 100%;  margin-top: 20px;}
-
+.foot_box { width: 100%;  margin-top: 10px;  float: left;}
+.foot_list{ display: inline-block; padding-right: 16%; margin-bottom: 10px;}
 .foot_list li{
-    margin-top: 15px;
     display: inline-block;
     font-size: 10px;
     font-weight: bold;
-    border-right:1px solid rgb(184, 184, 184);
-       
+    border-right:1px solid rgb(184, 184, 184);    
 }
 .foot_list li a {
-    margin-right: 5px;
+    margin-right: 14px;
     letter-spacing: -1px;
 }
 
 .foot_list li:last-child {
     border: none;
 }
-.copyright {
-    width: 1000px;
-    height: 20px;
-    font-size: 12px; margin-top: 10px; 
-    
-}
-
 
 .foot_list_sub {  
-    margin-top: -50px;
-    position: absolute;
-    right: 260px;
- 
+    display: inline-block;
+    margin: 0;
+  
 }
-.foot_list_sub li{ 
-    float: left;
-    text-align: center;
-    padding: 5px; font-size: 12px;color: rgb(74, 67, 59);
+.foot_list_sub li { 
+    float: left; list-style: none;
+    text-align: center; padding-right: 6px;
+    font-size: 12px; color: rgb(74, 67, 59);
 }
 
 
@@ -132,6 +131,7 @@ footer {
     letter-spacing: -1px;
 
 }
+.foot_list_sub li .option { width: 180px; font-size:12px; color:rgb(112,112,112);}
 
 .snsbut {
     width: 36px;
@@ -143,3 +143,12 @@ footer {
     
 }
 
+footer .copyright {
+    width: 100%;
+    height: 100px;
+    font-size: 11px; margin-top: 10px; 
+    margin-bottom: 10px;
+    color:rgb(112,112,112);
+    
+    
+}
