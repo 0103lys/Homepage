@@ -2,6 +2,11 @@ body *{
     margin: 0;
     padding: 0;
 }
+#wrap {
+    width: 1000px;
+    margin: 0 auto;
+}
+
 header{ width: 100%; }
 header h1 { color: rgb(74, 67, 59); font-weight:500;
     position: absolute; top:20px; left:45%; font-size: 29px; }
@@ -9,8 +14,8 @@ header h1 { color: rgb(74, 67, 59); font-weight:500;
     
     box-shadow:  5px 5px 10px rgb(221, 221, 221);
     margin-top: 100px;
-    margin-left: 24%;   
-    width: 980px;
+    
+    width: 1000px;
     height: 30px;   
     border: 0.3px solid rgb(211, 211, 211);
     display: inline-block;
@@ -45,7 +50,7 @@ ul, li a{
 
 .mainimg{
     background:url(/images/mainimg.jpg) no-repeat;
-    margin-left: 24%;
+   
     height:480px;
 }
 /* .mainimg{
@@ -53,7 +58,7 @@ ul, li a{
     margin-left: 24%; width: 100%;
     height:480px;
 } */
-.mainbody{ width: 980px; margin-left:24%;}
+.mainbody{ width: 1000px; }
 
 
 
@@ -77,47 +82,54 @@ margin-bottom: 50px;}
 
 
 footer {
-margin-left:24%;
-    width: 52%;
+    width: 100%;
     height: 40px;
     border-top: 1px solid rgb(211, 211, 211) ;
 }
 
-.footerbox { width: 100%;  margin-top: 20px;
-    }
+.footerbox { width: 100%;  margin-top: 20px;}
 
 .foot_list li{
     margin-top: 15px;
     display: inline-block;
-    font-size: 12px;
+    font-size: 10px;
+    font-weight: bold;
     border-right:1px solid rgb(184, 184, 184);
-    
+       
 }
+.foot_list li a {
+    margin-right: 5px;
+    letter-spacing: -1px;
+}
+
 .foot_list li:last-child {
     border: none;
 }
 .copyright {
-    font-size: 12px;
+    width: 1000px;
+    height: 20px;
+    font-size: 12px; margin-top: 10px; 
+    
 }
 
+
 .foot_list_sub {  
-    margin-top: -40px;
+    margin-top: -50px;
     position: absolute;
-    right: 480px;
-    
-
-    
-
+    right: 260px;
+ 
 }
 .foot_list_sub li{ 
     float: left;
     text-align: center;
+    padding: 5px; font-size: 12px;color: rgb(74, 67, 59);
+}
 
-    padding: 5px; font-size: 12px; ;}
 
 .foot_list_sub li:first-child {
     font-weight: bold;
     color: rgb(74, 67, 59);
+    letter-spacing: -1px;
 
 }
 
@@ -126,7 +138,7 @@ margin-left:24%;
     height: 18px;
     border: 1px solid rgb(184, 184, 184);
     background-color: white;
-    border-radius: 3px;
+    border-radius: 2px;
     font-size: 11px;
     
 }
